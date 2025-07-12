@@ -92,8 +92,10 @@ This project ensures that all instruments are properly sterilized, stored, and d
 
 ## 🖼️ Screenshots
 
-![Screenshot 1](https://github.com/user-attachments/assets/c0e25434-2af0-4354-b84a-78515dea9fcb)
-![Screenshot 2](https://github.com/user-attachments/assets/72bc735d-19b1-4669-9ac6-7fc0c1af7947)
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; margin: 20px 0;">
+  <img src="https://github.com/user-attachments/assets/c0e25434-2af0-4354-b84a-78515dea9fcb" alt="Screenshot_1746974287" style="width: 45%; height: auto;" />
+  <img src="https://github.com/user-attachments/assets/72bc735d-19b1-4669-9ac6-7fc0c1af7947" alt="Screenshot_1746974291" style="width: 45%; height: auto;" />
+</div>
 
 ---
 
@@ -171,6 +173,7 @@ This project ensures that all instruments are properly sterilized, stored, and d
 ├───util
 └───Widgets
     └───login_widgets
+<img width="420" height="677" alt="project structure cssd" src="https://github.com/user-attachments/assets/3b77fe3c-9147-4eed-a5f2-0b21a9957a00" />
 
 
 ---
