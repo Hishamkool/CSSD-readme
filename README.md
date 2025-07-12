@@ -213,7 +213,7 @@ This approach keeps the app maintainable, scalable, and testable.
 - Provider for State Management
 - Retrofit + Dio for API integration
 - JSON Serialization using `json_serializable`
-- - **Git & GitHub** – Version Control  
+- **Git & GitHub** – Version Control  
 - **Postman** – API testing  
 
 ### **Backend & Database**
