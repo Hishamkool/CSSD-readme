@@ -1,4 +1,4 @@
-# CSSD Sterilization Management System  
+<!--  # CSSD Sterilization Management System  
 
 
 ## 📌 Project Overview  
@@ -77,4 +77,171 @@ This project has been developed entirely from scratch by **one person (me)**. It
 - **UI/UX Design** – Designed in **Figma**  
 - **Presentations and FLowcharts** – Build Using **Lucidchart and ppt**  
 - **Development** – Built using **Flutter**  
-- **Testing & Optimization** – Fully tested and refined by me  
+- **Testing & Optimization** – Fully tested and refined by me   -->
+
+
+# CSSD Sterilization Management System
+
+## 📌 Project Overview
+
+The **CSSD Sterilization Management System** is a Flutter-based mobile application designed to digitize and streamline the sterilization process in hospital Central Sterile Supply Departments (CSSD). The application helps hospital staff manage instrument sterilization requests, track sterilized items, generate reports, and optimize workflow efficiency.
+
+This project ensures that all instruments are properly sterilized, stored, and dispatched efficiently, reducing human errors and improving patient safety.
+
+---
+
+## 🖼️ Screenshots
+
+![Screenshot 1](https://github.com/user-attachments/assets/c0e25434-2af0-4354-b84a-78515dea9fcb)
+![Screenshot 2](https://github.com/user-attachments/assets/72bc735d-19b1-4669-9ac6-7fc0c1af7947)
+
+---
+
+## 🚀 Features
+
+### 📌 User Authentication & Role Management
+- Secure login with phone number and password
+- Role-based access control for hospital staff and custodians
+
+### 🏥 Sterilization Request Management
+- Create, update, and track sterilization requests
+- Assign batches and instrument details
+- Manage request lifecycle and workflow
+
+### 📦 Stock & Inventory Tracking
+- Track sterile and non-sterile instruments
+- Monitor departmental allocations
+- Generate stock movement and usage reports
+
+### 🔄 Sterilization Workflow
+- Manual or automated tracking
+- Barcode scan support
+- Multi-stage handling: Cleaning → Packing → Sterilizing → Storing
+
+### 📊 Dashboards & Analytics
+- Daily/weekly/monthly statistics
+- Pie charts and graphs for insights
+- Request status breakdown (Pending, Completed, Rejected)
+
+### 🔔 Notifications & Alerts
+- Real-time updates on request and stock status
+- Alerts for delays, completions, or low stock
+
+### 📱 Mobile-Optimized UI
+- Responsive layout for mobile and tablet
+- Clean, intuitive, and user-friendly design
+
+---
+
+## 🧱 Project Structure
+
+├───app
+│   ├───api
+│   │   ├───dio_interceptors
+│   │   └───model
+│   └───modules
+│       ├───Cssd_User
+│       │   ├───controller
+│       │   ├───model
+│       │   │   ├───dashboard_models
+│       │   │   ├───request_models
+│       │   │   └───sterilization_models
+│       │   └───view
+│       │       └───widgets
+│       │           ├───dashboard_widgets
+│       │           ├───pickup_widgets
+│       │           ├───requests_widgets
+│       │           ├───sterilization_widgets
+│       │           └───timeline_widgets.dart
+│       ├───Department_User
+│       │   ├───controller
+│       │   ├───model
+│       │   │   ├───dahboard_models
+│       │   │   ├───send_for_sterilization_models
+│       │   │   └───used_item_model
+│       │   └───view
+│       │       └───widgets
+│       │           ├───dashboard_widgets
+│       │           └───used_items_entry_widgets
+│       └───login_module
+│           ├───controller
+│           ├───model
+│           └───view
+│               └───widgets
+├───util
+└───Widgets
+    └───login_widgets
+
+
+---
+
+## 🧠 Architecture
+
+- **Modular Structure**: Each module (e.g., login, CSSD user, department user) follows separation of concerns.
+- **MVVM-like Pattern**:
+  - **Model**: Represents API data and internal state.
+  - **View**: UI widgets and screens.
+  - **Controller (ViewModel)**: Business logic and state management using `Provider`.
+
+This approach keeps the app maintainable, scalable, and testable.
+
+---
+
+## 📦 Packages Used
+
+| Package             | Purpose                                       |
+|---------------------|-----------------------------------------------|
+| `provider`          | State management                              |
+| `dio`               | API networking                                |
+| `retrofit`          | Declarative API integration with Dio          |
+| `json_serializable` | JSON serialization/deserialization            |
+| `device_preview`    | Test responsive layout on multiple devices    |
+| `timeline_tile`     | Timeline representation of request progress   |
+| `fluttertoast`      | Show toast messages                           |
+| `shared_preferences`| Local storage for user session/token          |
+| `flutter_svg`       | Display SVG icons in the UI                   |
+
+---
+
+## 💻 Technologies Used
+
+### **Frontend (Flutter)**
+- Flutter (Dart)
+- Provider for State Management
+- Retrofit + Dio for API integration
+- JSON Serialization using `json_serializable`
+
+### **Backend & Database**
+- Node.js
+- MySQL  
+(*Backend not included in this repo*)
+
+### **Design & Planning**
+- **Figma** (UI/UX): [Figma Login Page](https://www.figma.com/design/AhiXAiuGINvj6A2I6KD8PO/CSSD?node-id=0-1&p=f&t=eNLrn1jNvmvWceYe-0)
+- **Lucidchart** (Flowchart): [Lucid Flow](https://lucid.app/lucidspark/2cc70bb3-73f1-44f3-9dbe-d21028ccccef/edit?viewport_loc=-3462%2C-816%2C9600%2C4344%2C0_0&invitationId=inv_b7d50099-8c24-42f6-96b3-4e762285cdb9)
+- **PowerPoint Presentation**: [Flowchart and Design](https://onedrive.live.com/view.aspx?resid=E3FDBE66304549A4%21132&authkey=!AC37oRTACybBPdY)
+
+---
+
+## 👨‍💻 Developed By
+
+This project was fully designed and developed from scratch by **Muhammed Hisham**.
+
+Contributions include:
+- 🎨 UI/UX Design
+- 🧠 Business Logic
+- 🔗 API Integration
+- 🔧 Testing & Optimization
+- 🛠️ Architecture Planning
+
+---
+
+## 📫 Contact
+
+📧 [linkedin.hisham@gmail.com](mailto:linkedin.hisham@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/hisham-ka)  
+💻 [GitHub](https://github.com/Hishamkool)
+
+---
+
+    
