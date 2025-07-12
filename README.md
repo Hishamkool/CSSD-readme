@@ -137,7 +137,7 @@ This project ensures that all instruments are properly sterilized, stored, and d
 
 ## 🧱 Project Structure
 
-├───app
+<!-- ├───app
 │   ├───api
 │   │   ├───dio_interceptors
 │   │   └───model
@@ -172,7 +172,7 @@ This project ensures that all instruments are properly sterilized, stored, and d
 │               └───widgets
 ├───util
 └───Widgets
-    └───login_widgets
+    └───login_widgets -->
 <img width="420" height="677" alt="project structure cssd" src="https://github.com/user-attachments/assets/3b77fe3c-9147-4eed-a5f2-0b21a9957a00" />
 
 
